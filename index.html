@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+		<link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+		<div class="container">
+	  <div class="row">
+
+	    <h2 class='center-align'>Tic Tac Toe</h2>
+	    <h3 class='center-align'>Round <span id="round">1</span></h3>
+	    <div class="col s3">
+	      <h5 class='center-align'>Player Score: <span id='playerScore'>0</span></h5>
+	    </div>
+	    <div class="col s6 flexbox">
+	      <div class="row">
+	        <div class="col s4">
+	          <a class="box card red waves-effect waves-dark btn" name="1"><p></p></a>
+	        </div>
+	        <div class="col s4">
+	          <a class="box card red waves-effect waves-dark btn" name="2"><p></p></a>
+	        </div>
+	        <div class="col s4">
+	          <a class="box card red waves-effect waves-dark btn" name="3"><p></p></a>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="col s4">
+	          <a class="box card red waves-effect waves-dark btn" name="4"><p></p></a>
+	        </div>
+	        <div class="col s4">
+	          <a class="box card red waves-effect waves-dark btn" name="5"><p></p></a>
+	        </div>
+	        <div class="col s4">
+	          <a class="box card red waves-effect waves-dark btn" name="6"><p></p></a>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="col s4">
+	          <a class="box card red waves-effect waves-dark btn" name="7"><p></p></a>
+	        </div>
+	        <div class="col s4">
+	          <a class="box card red waves-effect waves-dark btn" name="8"><p></p></a>
+	        </div>
+	        <div class="col s4">
+	          <a class="box card red waves-effect waves-dark btn" name="9"><p></p></a>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="col s3">
+	      <h5 class='center-align'>Computer Score: <span id='computerScore'>0</span></h5>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Intro Modal -->
+	<div id="introModal" class="modal">
+	  <div class="modal-content">
+	    <h4>Welcome to Tic Tac Toe!</h4>
+	    <p>You go first on odd rounds, the computer will go first on even rounds.</p>
+	    <p>Please choose a side:
+	      <a class="btn-floating btn-large waves-effect waves-light red pulse chooseX">X</a>
+	      <span>       or       </span>
+	      <a class="btn-floating btn-large waves-effect waves-light red pulse chooseO">O</a>
+	       <span>    </span>then click 'Let's Play!'
+	    </p>
+	  </div>
+	  <div class="modal-footer">
+	    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat playButton disabled">Let's Play!</a>
+	  </div>
+	</div>
+
+	<!-- Game over Modal -->
+	<div id="gameOverModal" class="modal">
+	  <div class="modal-content">
+	    <h4>Game Over!</h4>
+	    <p><span id='whoWins'></span> wins!</p>
+	  </div>
+	  <div class="modal-footer">
+	    <a href="#!" id="playAgain" class="modal-action modal-close waves-effect waves-green btn-flat">Play Again</a>
+	  </div>
+	</div>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+		<script src="index.js"></script>
+  </body>
+</html>

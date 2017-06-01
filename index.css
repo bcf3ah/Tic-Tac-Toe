@@ -1,0 +1,32 @@
+.box {
+  height: 130px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.card {
+  margin: 0;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+
+div .col.s4 {
+  padding: 0;
+}
+
+.flexbox {
+/*   width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px; */
+  text-align: center;
+/*   margin-left: 27%; */
+}
+
+a p {
+  font-size: 40px;
+  color: black;
+}
